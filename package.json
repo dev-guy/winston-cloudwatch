@@ -1,6 +1,6 @@
 {
-  "name": "winston-cloudwatch",
-  "version": "4.0.1",
+  "name": "@goodware/winston-cloudwatch",
+  "version": "1.0.0",
   "description": "Send logs to Amazon Cloudwatch using Winston.",
   "keywords": [
     "amazon",
@@ -11,18 +11,22 @@
   ],
   "main": "index.js",
   "scripts": {
+    "pub2": "npm publish --access=public",
     "test": "make test",
     "coveralls": "coveralls < ./coverage/lcov.info",
     "update-dependencies": "npm-check-updates -ua && npm install"
   },
-  "repository": "https://github.com/lazywithclass/winston-cloudwatch",
-  "author": "me@lazywithclass.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/good-ware/winston-cloudwatch"
+  },
   "license": "MIT",
   "typings": "typescript/winston-cloudwatch.d.ts",
   "peerDependencies": {
-    "winston": "^3.0.0"
+    "winston": "^3.6.0"
   },
   "dependencies": {
+    "@aws-sdk/client-cloudwatch-logs": "^3.56.0",
     "async": "^3.1.0",
     "chalk": "^4.0.0",
     "fast-safe-stringify": "^2.0.7",
