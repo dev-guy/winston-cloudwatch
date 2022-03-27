@@ -1,6 +1,4 @@
-@goodware/winston-cloudwatch
-
-- [git](https://github.com/good-ware/js-log)
+# @goodware/winston-cloudwatch
 
 ## This is a fork of winston-cloudwatch [v4.0.1](https://github.com/lazywithclass/winston-cloudwatch/blob/master/CHANGELOG.md#401)
 
